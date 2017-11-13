@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Qicstart1.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+         #nav
+        {
+            display : table ;
+            margin : 0 auto;         
+           
+        }
+        #nav ul
+        {
+            padding : 0 ;
+            list-style : none ;
+        }
+        #nav ul li
+        {
+            float : left ;
+            text-align : center ;
+            width : 120px ;
+            margin : 1px ;
+        }
+        #nav ul li a
+        {
+            color : #fff ;
+            text-decoration : none ;
+            font-family : Calibri ;
+            background : #0a0 ;
+            display : block ;
+            padding : 10px ;
+        }
+        #nav ul li a:hover
+        {
+            background : #0e0 ;
+            color : #000 ;
+        }
+        #nav ul li ul
+        {
+            display : none ;
+        }
+        #nav ul li:hover ul
+        {
+            display : block ;
+        }
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 107px;
+            height: 100px;
+            text-align: center;
+        }
+        .cart 
+        {
+            background-image: url([Image/cart.png]); 
+            background-repeat: no-repeat;
+            background-position: 50% 10px;
+            
+        }
+        .style3
+        {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1">
+            <tr>
+                <td style="text-align: center">
+                    <img alt="" class="style2" src="Image/logo1.jpg" /></td>
+            </tr>
+        </table>
+     
+    <div id ="nav">           
+                        <ul>
+                            <li><a href ="Default.aspx"> Home</a></li>
+                            <li><a href ="#">About Us</a></li>
+                            <li><a href ="#">Policies</a>
+                                <ul>
+                                <li><a href ="#">Privacy Policy</a></li>
+                                <li><a href ="#">Refund Policy</a></li>
+                                </ul>
+                            </li>
+                            <li><a href ="Products.aspx">Products</a></li>
+                            <li><a href ="ContactUs.aspx">Contact Us</a></li>
+                            <li><a href ="Login.aspx">Login</a></li>
+                            <li><a href ="MyAccount.aspx">My Account</a></li>
+                            <li class='cart'><a href ="ShoppingCart.aspx">My Cart</a></li>
+                            <li><a href ="SignUp.aspx">Sign Up</a></li>
+                        </ul>
+                    </div>
+    </div>
+   
+
+    <table class="style1">
+        <tr>
+            <td bgcolor="Silver" colspan="2" 
+                style="border-style: dotted; text-align: right; height: 20px; width: 70%;">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 50%; font-family: 'Adobe Devanagari'; color: #FFFFFF; font-size: large;" 
+                bgcolor="Gray">
+                Build your own IT solutuions with Qickiosk or contact us at 6392-9982 for more 
+                information
+                <br />
+                Copyright @ 2015 Qicstart&nbsp; All Rights Reserved </td>
+            <td style="width: 50%; text-align: right; font-family: 'Adobe Devanagari';" 
+                bgcolor="Gray">
+                <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="White" 
+                    NavigateUrl="~/StaffLogin.aspx">Staff Login</asp:HyperLink>
+&nbsp;|
+                <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="White">Contact Us</asp:HyperLink>
+&nbsp;|
+                <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="White">Terms of Use</asp:HyperLink>
+&nbsp;|             
+                <asp:HyperLink ID="HyperLink4" runat="server" ForeColor="White" NavigateUrl="~/DeveloperLogin.aspx">Developer Login</asp:HyperLink>
+        </tr>
+    </table>
+   
+
+    </form>
+   
+
+    </body>
+</html>

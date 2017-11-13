@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Qicstart Technologies</title>
+<link href="css/invoice.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!-- start wrap -->
+<div class="wrap">
+	<!-- start box top -->
+    <div id="box_top"><img src="http://bleap.me/wp-content/uploads/2015/07/box_top.png" alt="img" /></div>
+    <!-- end box top -->
+    <!-- start box -->
+    <div id="box">
+    	<!-- start header -->
+        <div id="header">
+        	<!-- start logo -->
+            <div id="logo">
+            	<a href="#" title="Qicstart Technologies"><img src="http://bleap.me/wp-content/uploads/2015/07/logo1.jpg" width="100" height="100" /></a>            
+            </div>
+            <!-- end logo -->
+            <!-- start header right -->
+            <div id="header_right">
+                <h2>Invoice</h2>
+            	<h2>Order ID:  ##ORDERID##</h2>
+                <p>Issued ##DATE##</p>
+            </div>
+            <!-- end header right -->
+        </div>
+        <!-- end header -->
+        <!-- start details -->
+        <div id="details">
+        	<!-- start invoice-from -->
+            	<div class="invoice-from">
+            	<h3>From:</h3>
+            	<p>Qicstart Technologies <br />
+              	Blk 341 Bedok North Road<br />
+				Street 22</p>
+            </div>
+            <!-- end invoice-from -->
+            <!-- start invoice-to -->
+            <div class="invoice-to">
+            	<h3>To:</h3>
+            	<p>##CUSTNAME##<br />
+              	##CUSTADDRESS##<br /></p>
+            </div>
+            <!-- end invoice-to -->
+            <!-- start invoice-desc -->
+            <div class="invoice-desc">
+            	<h3>Thank Your For Odering With Qicstart</h3>
+            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat, erat eu ullamcorper faucibus, dolor diam mollis massa, at ultrices risus ligula eu ipsum.</p>
+             </div>
+             <!-- end invoice-desc -->
+        </div>
+        <!-- end details -->
+        <div class="clear"></div>
+        
+    	<!-- start table -->
+    	<div id="table">
+        	<table border="0" cellpadding="0" cellspacing="0" class="summary">
+            	<thead>
+                	<tr>
+                	<th width="438">Item</th>
+                      <th width="250">Details</th>
+                      <th width="120">Subtotal</th>
+                	</tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    	<td width="438">##ITEMNAME##</td>
+                        <td width="250">##DESC##</td>
+                        <td width="120">##TOTAL##</td>
+                    </tr>
+                	<tr class="tfoot">
+                    	<td width="438">&nbsp;</td>
+                        <td width="250">Total: </td>
+                        <td width="120">##TOTAL##</td>
+                    </tr>
+                </tbody>
+		  </table>
+   	  	</div>	
+    	<!-- end table -->
+        <div class="clear"></div>
+        <!-- start payment -->
+        <div id="payment">
+        	<a href="#" title="Paypal" class="paypal">Paypal</a>
+        	<span>Online payments procesed by PayPal</span>
+        </div>
+        <!-- end payment -->
+    </div>
+    <!-- end box -->
+    <!-- start box bottom -->
+    <div id="box_bottom"><img src="http://bleap.me/wp-content/uploads/2015/07/box_bottom.png" alt="img" /></div>
+    <!-- end box bottom -->
+</div>
+<!-- end wrap -->
+</body>
+</html>

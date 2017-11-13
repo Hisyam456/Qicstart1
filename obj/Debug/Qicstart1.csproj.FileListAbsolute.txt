@@ -1,0 +1,4 @@
+C:\Users\S\documents\visual studio 2010\Projects\Qicstart1\Qicstart1\bin\Qicstart1.dll
+C:\Users\S\documents\visual studio 2010\Projects\Qicstart1\Qicstart1\bin\Qicstart1.pdb
+C:\Users\S\documents\visual studio 2010\Projects\Qicstart1\Qicstart1\obj\Debug\Qicstart1.dll
+C:\Users\S\documents\visual studio 2010\Projects\Qicstart1\Qicstart1\obj\Debug\Qicstart1.pdb
